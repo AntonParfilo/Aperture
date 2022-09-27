@@ -26,5 +26,7 @@
       width: 620px;
       text-align: center;
     }
+    @extend %info_block;
+    
   }
 }

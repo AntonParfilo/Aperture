@@ -1,4 +1,5 @@
 .header {
+  z-index: 20;
   width: 100%;
   height: 100px;
   background-color: #242424;
@@ -20,17 +21,4 @@
 }
 .header .header__wrapper .header__nav a:hover {
   text-decoration: underline;
-}
-.header .header__wrapper .header__nav .header__button {
-  border: 2px solid #ffffff;
-  padding: 9px 20px;
-  background-color: #ffffff;
-  border-radius: 14px;
-  color: #000;
-  transition: 0.5s;
-}
-.header .header__wrapper .header__nav .header__button:hover {
-  color: #fff;
-  background-color: #242424;
-  text-decoration: none;
 }

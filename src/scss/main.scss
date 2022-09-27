@@ -1,6 +1,11 @@
 @import "./adaptiveValue.scss";
 @import "./header.scss";
 @import "./aperture.scss";
+@import "./what.scss";
+@import "./opacity1.scss";
+@import "./tools.scss";
+@import "./monstera.scss";
+@import "./clients.scss";
 body{
     box-sizing: border-box;
     margin: 0;
@@ -8,9 +13,65 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 400;
+    color: #fff;
 }
 .container{
     max-width: 1440px;
     padding: 0 20px;
     margin: 0 auto;
 }
+.background__fixed{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("/src/img/fixed_bg.jpg") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+  %button{
+    .button {
+        border: 2px solid #ffffff;
+        padding: 9px 20px;
+        background-color: #ffffff;
+        border-radius: 14px;
+        color: #000 !important;
+        transition: .5s;
+        &:hover {
+            color: #fff !important;
+            background-color: #242424;
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+      }
+  }
+  %title_h2{
+    h2 {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+      }
+      p {
+        width: 100%;
+        text-align: center;
+        font-size: 23px;
+        color: #c0c0c0;
+        margin: 0 0 20px 0;
+      }
+  }
+  %info_block{
+    .info_block{
+        width: 100%;
+        text-align: right;
+        .aperture__info_block{
+          margin-left: 16px;
+          font-size: 14px;
+          color: #fff;
+          svg{
+            position: relative;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+  }

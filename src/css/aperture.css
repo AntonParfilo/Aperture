@@ -28,3 +28,18 @@
   width: 620px;
   text-align: center;
 }
+.aperture .aperture__wrapper .aperture__info {
+  width: 100%;
+  text-align: right;
+}
+.aperture .aperture__wrapper .aperture__info .aperture__info_block {
+  margin-left: 16px;
+  font-size: 14px;
+  color: #fff;
+}
+.aperture .aperture__wrapper .aperture__info .aperture__info_block svg {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+}

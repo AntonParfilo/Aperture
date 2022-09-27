@@ -1,6 +1,7 @@
 @import "./adaptiveValue.scss";
 
 .header {
+  z-index: 20;
   width: 100%;
   height: 100px;
   background-color: #242424;
@@ -22,19 +23,7 @@
           text-decoration: underline;
         }
       }
-      .header__button {
-        border: 2px solid #ffffff;
-        padding: 9px 20px;
-        background-color: #ffffff;
-        border-radius: 14px;
-        color: #000;
-        transition: .5s;
-        &:hover {
-            color: #fff;
-            background-color: #242424;
-            text-decoration: none;
-        }
-      }
+      @extend %button;
     }
   }
 }
