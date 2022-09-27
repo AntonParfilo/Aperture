@@ -1,0 +1,82 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #242424;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+}
+.header .header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header .header__wrapper .header__nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 16px;
+}
+.header .header__wrapper .header__nav a:hover {
+  text-decoration: underline;
+}
+.header .header__wrapper .header__nav .header__button {
+  border: 2px solid #ffffff;
+  padding: 9px 20px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  color: #000;
+  transition: 0.5s;
+}
+.header .header__wrapper .header__nav .header__button:hover {
+  color: #fff;
+  background-color: #242424;
+  text-decoration: none;
+}
+
+.aperture {
+  background: url("/src/img/Aperture_bg.jpg") no-repeat bottom center;
+  background-size: cover;
+  height: 100vh;
+}
+.aperture .aperture__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aperture .aperture__wrapper h2 {
+  color: #c0c0c0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.aperture .aperture__wrapper h1 {
+  color: #fff;
+  font-size: 52px;
+  line-height: 110%;
+  margin: 0;
+}
+.aperture .aperture__wrapper p {
+  color: #c0c0c0;
+  width: 620px;
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
