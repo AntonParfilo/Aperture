@@ -9,4 +9,27 @@
     .clients__content{
         @extend %title_h2;
     }
+    .swiper {
+        width: 90vw;
+        height: 200px;
+        .swiper-pagination-bullet{
+            width: 10px;
+            height: 10px;
+            background-color: #c0c0c0;
+            transition: .5s;
+        }
+        .swiper-pagination-bullet-active{
+            width: 23px;
+            height: 10px;
+            background-color: #c0c0c0;
+            transition: .5s;
+            border-radius: 10px;
+        }
+        .swiper-slide{
+            svg{
+                width: 130px;
+            }
+        }
+      }
+      
 }

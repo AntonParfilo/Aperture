@@ -28,6 +28,14 @@ body{
     background-size: cover;
     z-index: -1;
 }
+.background__fixed_two{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url("/src/img/fixed_bg2.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
   %button{
     .button {
         border: 2px solid #ffffff;

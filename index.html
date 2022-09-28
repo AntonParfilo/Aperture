@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Aperture</title>
 </head>
 
@@ -25,7 +26,7 @@
             </nav>
         </div>
     </header>
-    <section class="background__fixed"></section>
+    <section class="background__fixed" id="background__fixed"></section>
     <section class="aperture">
         <div class="container aperture__wrapper">
             <h2>Photographer & Filmmaker</h2>
@@ -66,8 +67,8 @@
     </section>
     <section class="what">
         <div class="container what__wrapper">
-            <h2>What we do.</h2>
-            <p>The areas that we're specialized in.</p>
+            <h2>What we do</h2>
+            <p>The areas that we're specialized in</p>
             <div class="what__content">
                 <div class="what__lc">
                     <div class="what__product what__content_block">
@@ -115,7 +116,7 @@
             </div>
         </div>
     </section>
-    <section class="opacity1">
+    <section class="opacity1" id="opacity_block">
         <div class="container opacity1__wrapper">
             <h2>Sunset at Mount Fuji</h2>
             <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
@@ -150,7 +151,7 @@
     <section class="tools">
         <div class="tools__lc">
             <p>The Gear cage</p>
-            <h2>The tools that we use.</h2>
+            <h2>The tools that we use</h2>
             <p class="tools__text">
                 The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed
                 film". While we don't shoot (a lot) of film these days — these are the tools that we actually use
@@ -228,9 +229,80 @@
             <p>Trusted by your favourite companies</p>
         </div>
         <div class="clients__carousel">
-            
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-clients.svg#01"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-slide">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-clients.svg#02"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-slide">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-clients.svg#03"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-slide">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-clients.svg#04"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-slide">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-clients.svg#05"></use>
+                        </svg>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
         </div>
     </section>
+    <section class="opacity1" id="opacity_block">
+        <div class="container opacity1__wrapper">
+            <h2>Star fall in the Himalayas</h2>
+            <p>Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+            <div class="info_block">
+                <span class="aperture__info_block">
+                    <svg>
+                        <use xlink:href="/src/img/sprite-aperture.svg#01"></use>
+                    </svg>
+                    <span>6''</span>
+                </span>
+                <span class="aperture__info_block">
+                    <svg>
+                        <use xlink:href="/src/img/sprite-aperture.svg#02"></use>
+                    </svg>
+                    <span>f/11</span>
+                </span>
+                <span class="aperture__info_block">
+                    <svg>
+                        <use xlink:href="/src/img/sprite-aperture.svg#03"></use>
+                    </svg>
+                    <span>800</span>
+                </span>
+                <span class="aperture__info_block">
+                    <svg>
+                        <use xlink:href="/src/img/sprite-aperture.svg#04"></use>
+                    </svg>
+                    <span>Nepal</span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/src/js/swiper.js"></script>
+    <script src="/src/js/main.js"></script>
 </body>
 
 </html>
