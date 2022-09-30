@@ -22,66 +22,83 @@
                 <a href="#">Featured images</a>
                 <a href="#">Gear cage</a>
                 <a href="#">Contact</a>
-                <a class="button" href="#">Get template</a>
             </nav>
+            <a class="button" href="#">Get template</a>
+            <div class="header__burger">
+                <span></span>
+            </div>
         </div>
     </header>
     <section class="background__fixed" id="background__fixed"></section>
     <section class="aperture">
         <div class="container aperture__wrapper">
-            <h2>Photographer & Filmmaker</h2>
-            <h1>Aperture Studios</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
-                erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
-                posuere.
-            </p>
-            <div class="info_block">
-                <span class="aperture__info_block">
-                    <svg>
-                        <use xlink:href="/src/img/sprite-aperture.svg#01"></use>
-                    </svg>
-                    <span>1/2000s</span>
-                </span>
-                <span class="aperture__info_block">
-                    <svg>
-                        <use xlink:href="/src/img/sprite-aperture.svg#02"></use>
-                    </svg>
-                    <span>f/11</span>
-                </span>
-                <span class="aperture__info_block">
-                    <svg>
-                        <use xlink:href="/src/img/sprite-aperture.svg#03"></use>
-                    </svg>
-                    <span>100</span>
-                </span>
-                <span class="aperture__info_block">
-                    <svg>
-                        <use xlink:href="/src/img/sprite-aperture.svg#04"></use>
-                    </svg>
-                    <span>Iceland</span>
-                </span>
-            </div>
+            <span class="animation_wrapper">
+                <h2>Photographer & Filmmaker</h2>
+            </span>
+            <span class="animation_wrapper">
+                <h1>Aperture Studios</h1>
+            </span>
+            <span class="animation_wrapper">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+                    erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
+                    posuere.
+                </p>
+            </span>
+            <span class="animation_wrapper" style="width: 100%">
+                <div class="info_block">
+                    <span class="aperture__info_block">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-aperture.svg#01"></use>
+                        </svg>
+                        <span>1/2000s</span>
+                    </span>
+                    <span class="aperture__info_block">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-aperture.svg#02"></use>
+                        </svg>
+                        <span>f/11</span>
+                    </span>
+                    <span class="aperture__info_block">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-aperture.svg#03"></use>
+                        </svg>
+                        <span>100</span>
+                    </span>
+                    <span class="aperture__info_block">
+                        <svg>
+                            <use xlink:href="/src/img/sprite-aperture.svg#04"></use>
+                        </svg>
+                        <span>Iceland</span>
+                    </span>
+                </div>
+            </span>
         </div>
     </section>
     <section class="what">
         <div class="container what__wrapper">
-            <h2>What we do</h2>
-            <p>The areas that we're specialized in</p>
+            <div class="animation_wrapper">
+                <h2 id="what_title">What we do</h2>
+            </div>
+            <div class="animation_wrapper">
+                <p id="what_subtitle">The areas that we're specialized in</p>
+            </div>
             <div class="what__content">
                 <div class="what__lc">
-                    <div class="what__product what__content_block">
-                        <a href="#">Product Photography</a>
-                        <p class="what__item_text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
-                            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus
-                            egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
-                            cursus quam.</p>
-                        <span class="button">
-                            Read more
-                        </span>
+                    <div class="animation_wrapper">
+                        <div class="what__product what__content_block" id="what_block1" >
+                            <a href="#">Product Photography</a>
+                            <p class="what__item_text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+                                Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus
+                                egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
+                                cursus quam.</p>
+                            <span class="button">
+                                Read more
+                            </span>
+                        </div>
                     </div>
-                    <div class="what__drone what__content_block">
+                    <div class="what__drone what__content_block" id="what_block2">
                         <a href="#">Drone Photography</a>
                         <p class="what__item_text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
                             Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus
@@ -93,7 +110,7 @@
                     </div>
                 </div>
                 <div class="what__rc">
-                    <div class="what__arc what__content_block">
+                    <div class="what__arc what__content_block" id="what_block3">
                         <a href="#">Architecture Photography</a>
                         <p class="what__item_text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices,
                             orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce
@@ -102,7 +119,7 @@
                             Read more
                         </span>
                     </div>
-                    <div class="what__wildlife what__content_block">
+                    <div class="what__wildlife what__content_block" id="what_block4">
                         <a href="#">Wildlife Photography</a>
                         <p class="what__item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                             scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi
@@ -118,8 +135,12 @@
     </section>
     <section class="opacity" id="opacity_block">
         <div class="container opacity__wrapper">
-            <h2>Sunset at Mount Fuji</h2>
-            <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+            <div class="animation_wrapper">
+                <h2 class="opacity_title">Sunset at Mount Fuji</h2>
+            </div>
+            <div class="animation_wrapper">
+                <p class="opacity_subtitle">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+            </div>
             <div class="info_block">
                 <span class="aperture__info_block">
                     <svg>
@@ -229,11 +250,8 @@
             <p>Trusted by your favourite companies</p>
         </div>
         <div class="clients__carousel">
-            <!-- Slider main container -->
             <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <svg>
                             <use xlink:href="/src/img/sprite-clients.svg#01"></use>
@@ -260,9 +278,7 @@
                         </svg>
                     </div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div>
 
@@ -301,36 +317,74 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer__content container">
+        <div class="footer__content">
             <h2>Need help with photography</br> or videography?</h2>
             <p>We're here for you!</p>
             <a href="#"><span class="button">Get in touch</span></a>
-            <div class="footer__block1">
-                <div class="footer__block1_lc">
-                    <img src="./src/img/logo.svg" alt="footer logo">
-                    <p>Photographers & videographers capturing the world around us.</p>
+            <div class="container">
+                <div class="footer__block1">
+                    <div class="footer__block1_lc">
+                        <img src="./src/img/logo.svg" alt="footer logo">
+                        <p>Photographers & videographers capturing the world around us.</p>
+                    </div>
+                    <div class="footer__block1_rc">
+                        <div class="footer__business">
+                            <p>Business areas</p>
+                            <ul>
+                                <li><a href="#">Product Photography</a></li>
+                                <li><a href="#">Architecture Photography</a></li>
+                                <li><a href="#">Drone Photography</a></li>
+                                <li><a href="#">Wildlife Photography</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__pages">
+                            <p>Pages</p>
+                            <ul>
+                                <li><a href="#">Gear cage</a></li>
+                                <li><a href="#">Featured images</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Style guide</a></li>
+                                <li><a href="#">Instructions</a></li>
+                                <li><a href="#">Changelog</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer__block1_rc">
-                    <div class="footer__business">
-                        <p>Business areas</p>
-                        <ul>
-                            <li><a href="#">Product Photography</a></li>
-                            <li><a href="#">Architecture Photography</a></li>
-                            <li><a href="#">Drone Photography</a></li>
-                            <li><a href="#">Wildlife Photography</a></li>
-                        </ul>
+            </div>
+            <div class="footer__border"></div>
+            <div class="container">
+                <div class="footer__block2">
+                    <div class="footer__block2_lc">
+                        <p>Subscribe to our newsletter</p>
+                        <span>Read about all the things we do.</span>
                     </div>
-                    <div class="footer__pages">
-                        <p>Pages</p>
-                        <ul>
-                            <li><a href="#">Gear cage</a></li>
-                            <li><a href="#">Featured images</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Style guide</a></li>
-                            <li><a href="#">Instructions</a></li>
-                            <li><a href="#">Changelog</a></li>
-                        </ul>
+                    <div class="footer__block2_rc">
+                        <div class="input_wrapper">
+                            <input type="email" name="email" placeholder="ENTER YOUR EMAIL">
+                            <button>Submit</button>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="footer__border"></div>
+            <div class="footer__block3 container">
+                <p>© Aperture Photography, Inc. All rights reserved. Licensing.</p>
+                <div class="footer__social">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/footer_social.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/footer_social.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/footer_social.svg#facebook"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -340,6 +394,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/src/js/swiper.js"></script>
     <script src="/src/js/main.js"></script>
+    <script src="/src/js/parallax.js"></script>
 </body>
 
 </html>

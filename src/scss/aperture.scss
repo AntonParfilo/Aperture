@@ -14,17 +14,36 @@
       text-transform: uppercase;
       font-size: 14px;
       letter-spacing: 2px;
+      transform: translate(0, 200%);
+      animation: showToBottom 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 1.3s;
     }
     h1 {
       color: #fff;
       font-size: 52px;
       line-height: 110%;
       margin: 0;
+      text-align: center;
+      transform: translate(0, 200%);
+      animation: showToBottom 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
     }
     p {
       color: #c0c0c0;
       width: 620px;
       text-align: center;
+      transform: translate(0, 200%);
+      animation: showToBottom 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 1.4s;
+    }
+    .info_block{
+      transform: translate(0, 200%);
+      animation: showToBottom 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 1.8s;
     }
     @extend %info_block;
     

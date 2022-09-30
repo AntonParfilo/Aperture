@@ -1,0 +1,28 @@
+.showToBottom{
+    animation: showToBottom 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes showToBottom{
+    0%{
+        transform: translate(0, 200%);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+.showToRight{
+    animation: showToRight 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes showToRight{
+    0%{
+        transform: translate(200%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.showOpacity{
+    opacity: 1 !important;
+}

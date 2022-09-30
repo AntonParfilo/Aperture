@@ -12,9 +12,11 @@
         @extend %title_h2;
         h2{
             text-transform: uppercase;
+            transform: translate(200%, 0);
         }
         p{
             width: 500px !important;
+            transform: translate(200%, 0);
         }
         @extend %info_block;
         .info_block{

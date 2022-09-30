@@ -1,0 +1,21 @@
+@media (max-width: 900px) {
+  .header .header__wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header .header__wrapper .header__nav {
+    display: none;
+  }
+  .header .header__wrapper .button {
+    margin-right: 80px;
+  }
+  .header .header__wrapper .header__burger {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    padding: 0 10px;
+  }
+}
