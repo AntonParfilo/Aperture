@@ -1,0 +1,30 @@
+.burgermenu {
+  background-color: #242424;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 150px;
+}
+.burgermenu nav {
+  display: flex;
+  flex-direction: column;
+}
+.burgermenu nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.open {
+  transform: translateX(0);
+}

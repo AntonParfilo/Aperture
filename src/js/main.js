@@ -41,7 +41,12 @@ const footer_input = document.querySelector(".input_wrapper");
 
 //              CLICK BURGER ICON
 const burger_icon = document.querySelector(".header__burger");
-burger_icon.addEventListener("click", el => { burger_icon.classList.toggle("active") });
+const burger_menu = document.querySelector(".burgermenu");
+burger_icon.addEventListener("click", el => {
+    burger_icon.classList.toggle("active");
+    burger_menu.classList.toggle("open");
+});
+
 
 function scrollHandler(){
     //            SWAP BACKGROUND

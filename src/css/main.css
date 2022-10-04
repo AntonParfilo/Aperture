@@ -134,8 +134,8 @@
           animation: showToBottom 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
 .aperture .aperture__wrapper h1 {
   color: #fff;
@@ -160,8 +160,8 @@
           animation: showToBottom 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 .aperture .aperture__wrapper .info_block {
   transform: translate(0, 200%);
@@ -169,8 +169,8 @@
           animation: showToBottom 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
 }
 
 .what {
@@ -462,6 +462,8 @@
 }
 .clients .swiper .swiper-slide svg {
   width: 130px;
+  margin: 0 auto;
+  display: block;
 }
 
 footer {
@@ -567,6 +569,7 @@ footer .footer__content .footer__block2 .footer__block2_rc {
   align-items: center;
 }
 footer .footer__content .footer__block2 .footer__block2_rc .animation_wrapper_input {
+  overflow: hidden;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -944,6 +947,37 @@ footer .footer__content .footer__block3 .footer__social a svg {
 }
 .showOpacity {
   opacity: 1 !important;
+}
+
+.burgermenu {
+  background-color: #242424;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 150px;
+}
+.burgermenu nav {
+  display: flex;
+  flex-direction: column;
+}
+.burgermenu nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.open {
+  transform: translateX(0);
 }
 
 body {

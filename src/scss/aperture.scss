@@ -17,7 +17,7 @@
       transform: translate(0, 200%);
       animation: showToBottom 1s;
       animation-fill-mode: forwards;
-      animation-delay: 1.3s;
+      animation-delay: 1.6s;
     }
     h1 {
       color: #fff;
@@ -37,13 +37,13 @@
       transform: translate(0, 200%);
       animation: showToBottom 1s;
       animation-fill-mode: forwards;
-      animation-delay: 1.4s;
+      animation-delay: 1.3s;
     }
     .info_block{
       transform: translate(0, 200%);
       animation: showToBottom 1s;
       animation-fill-mode: forwards;
-      animation-delay: 1.8s;
+      animation-delay: 1.9s;
     }
     @extend %info_block;
     
