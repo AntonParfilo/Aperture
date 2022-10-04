@@ -4,6 +4,12 @@
   .what__wrapper {
     @extend %button;
     @extend %title_h2;
+    #what_title{
+      transform: translate(0, 200%);
+    }
+    #what_subtitle{
+      transform: translate(0, 200%);
+    }
     .what__content {
       display: flex;
       gap: 20px;

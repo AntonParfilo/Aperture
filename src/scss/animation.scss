@@ -23,6 +23,19 @@
     }
 }
 
+.showToLeft{
+    animation: showToLeft 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes showToLeft{
+    0%{
+        transform: translate(-200%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
 .showOpacity{
     opacity: 1 !important;
 }

@@ -177,6 +177,12 @@
   background-color: #000;
   padding-bottom: 100px;
 }
+.what .what__wrapper #what_title {
+  transform: translate(0, 200%);
+}
+.what .what__wrapper #what_subtitle {
+  transform: translate(0, 200%);
+}
 .what .what__wrapper .what__content {
   display: flex;
   gap: 20px;
@@ -307,11 +313,26 @@
   align-items: flex-end;
 }
 .opacity .opacity__wrapper h2 {
+  width: 500px;
+  text-align: left;
   text-transform: uppercase;
   transform: translate(200%, 0);
 }
+@supports (font-size: clamp( 1.5rem , -0.9615384615rem  +  12.3076923077vw , 2.5rem )) {
+  .opacity .opacity__wrapper h2 {
+    font-size: clamp( 1.5rem , -0.9615384615rem  +  12.3076923077vw , 2.5rem );
+  }
+}
+@supports not (font-size: clamp( 1.5rem , -0.9615384615rem  +  12.3076923077vw , 2.5rem )) {
+  .opacity .opacity__wrapper h2 {
+    font-size: calc(
+      1.5rem + 1 * (100vw - 20rem) / 8.125
+    );
+  }
+}
 .opacity .opacity__wrapper p {
   width: 500px !important;
+  text-align: left !important;
   transform: translate(200%, 0);
 }
 .opacity .opacity__wrapper .info_block {
@@ -333,6 +354,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.tools .tools__lc .tools__title {
+  transform: translate(-200%, 0);
+}
+.tools .tools__lc .tools__subtitle {
+  transform: translate(-200%, 0);
+}
+.tools .tools__lc .tools__text {
+  transform: translate(-200%, 0);
+}
+.tools .tools__lc .tools__button {
+  margin: 30px 0;
+  transform: translate(-400%, 0);
 }
 .tools .tools__lc p {
   margin: 0 !important;
@@ -366,6 +400,12 @@
   position: relative;
   height: 100%;
 }
+.monstera .monstera_wrapper .monstera__title {
+  transform: translate(200%, 0);
+}
+.monstera .monstera_wrapper .monstera__text {
+  transform: translate(200%, 0);
+}
 .monstera .monstera_wrapper .monstera__content {
   display: flex;
   flex-direction: column;
@@ -397,6 +437,12 @@
   justify-content: center;
   align-items: center;
 }
+.clients .clients__content .clients__title {
+  transform: translate(0, 200%);
+}
+.clients .clients__content .clients__subtitle {
+  transform: translate(0, 200%);
+}
 .clients .swiper {
   width: 90vw;
   height: 200px;
@@ -426,6 +472,27 @@ footer {
 footer .footer__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer__content .footer__title, footer .footer__content .footer__subtitle, footer .footer__content .footer__button {
+  transform: translate(0, 200%);
+}
+footer .footer__content .footer__leftText1, footer .footer__content .footer__leftText2 {
+  transform: translate(-200%, 0);
+}
+footer .footer__content .footer__leftText2 {
+  font-size: 14px;
+}
+footer .footer__content .footer__subtitle, footer .footer__content .footer__button {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+footer .footer__content .animation_wrapper_footer {
+  overflow: hidden;
+  width: 140px;
+  height: 45px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -499,8 +566,14 @@ footer .footer__content .footer__block2 .footer__block2_rc {
   justify-content: flex-end;
   align-items: center;
 }
+footer .footer__content .footer__block2 .footer__block2_rc .animation_wrapper_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 footer .footer__content .footer__block2 .footer__block2_rc .input_wrapper {
-  width: 460px;
+  transform: translate(-200%, 0);
+  width: 90%;
   height: 75px;
   background-color: #f9fafb;
   border-radius: 12px;
@@ -592,6 +665,8 @@ footer .footer__content .footer__block3 .footer__social a svg {
     text-align: center !important;
   }
   .what .what__content {
+    width: 100vw;
+    transform: translate(-20px, 0);
     flex-direction: column;
   }
   .what .what__content .what__lc,
@@ -681,6 +756,12 @@ footer .footer__content .footer__block3 .footer__social a svg {
   }
 }
 @media (max-width: 550px) {
+  .opacity h2 {
+    width: 100% !important;
+  }
+  .footer .footer__content .animation_wrapper_footer {
+    width: 90%;
+  }
   .footer .footer__content a {
     width: 90% !important;
     box-sizing: border-box;
@@ -837,6 +918,30 @@ footer .footer__content .footer__block3 .footer__social a svg {
     transform: translate(0, 0);
   }
 }
+.showToLeft {
+  -webkit-animation: showToLeft 1s;
+          animation: showToLeft 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes showToLeft {
+  0% {
+    transform: translate(-200%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes showToLeft {
+  0% {
+    transform: translate(-200%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .showOpacity {
   opacity: 1 !important;
 }
@@ -861,8 +966,9 @@ body {
 
 .background__fixed {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  left: -10%;
+  width: 120vw;
+  height: 110vh;
   background: url("/src/img/fixed_bg.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
@@ -870,8 +976,9 @@ body {
 
 .background__fixed_two {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  left: -10%;
+  width: 120vw;
+  height: 110vh;
   background: url("/src/img/fixed_bg2.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
@@ -904,19 +1011,6 @@ body {
   font-size: 40px;
   margin: 0;
   text-align: center;
-  transform: translate(0, 200%);
-}
-@supports (font-size: clamp( 1.9375rem , 1.5357142857rem  +  2.0089285714vw , 2.5rem )) {
-  .what .what__wrapper h2, .opacity .opacity__wrapper h2, .tools .tools__lc h2, .monstera .monstera_wrapper h2, .clients .clients__content h2, footer .footer__content h2 {
-    font-size: clamp( 1.9375rem , 1.5357142857rem  +  2.0089285714vw , 2.5rem );
-  }
-}
-@supports not (font-size: clamp( 1.9375rem , 1.5357142857rem  +  2.0089285714vw , 2.5rem )) {
-  .what .what__wrapper h2, .opacity .opacity__wrapper h2, .tools .tools__lc h2, .monstera .monstera_wrapper h2, .clients .clients__content h2, footer .footer__content h2 {
-    font-size: calc(
-      1.9375rem + 0.5625 * (100vw - 20rem) / 28
-    );
-  }
 }
 .what .what__wrapper p, .opacity .opacity__wrapper p, .tools .tools__lc p, .monstera .monstera_wrapper p, .clients .clients__content p, footer .footer__content p {
   width: 100%;
@@ -924,7 +1018,6 @@ body {
   font-size: 23px;
   color: #c0c0c0;
   margin: 0 0 20px 0;
-  transform: translate(0, 200%);
 }
 
 .aperture .aperture__wrapper .info_block, .opacity .opacity__wrapper .info_block, .tools .tools__rc .info_block, .monstera .monstera_wrapper .info_block {

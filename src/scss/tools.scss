@@ -7,13 +7,26 @@
     .tools__lc{
         width: 50%;
         height: 100%;
+        .tools__title{
+            transform: translate(-200%, 0);
+        }
+        .tools__subtitle{
+            transform: translate(-200%, 0);
+        }
+        .tools__text{
+            transform: translate(-200%, 0);
+        }
+        .tools__button{
+            margin: 30px 0;
+            transform: translate(-400%, 0);
+        }
         @extend %title_h2;
         @extend %button;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+        p{  
             margin: 0 !important;
         }
         .tools__text{

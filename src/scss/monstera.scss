@@ -5,8 +5,14 @@
   background-size: cover;
   .monstera_wrapper {
     position: relative;
-    @extend %info_block;
     height: 100%;
+    .monstera__title{
+      transform: translate(200%, 0);
+    }
+    .monstera__text{
+      transform: translate(200%, 0);
+    }
+    @extend %info_block;
     @extend %title_h2;
     .monstera__content {
       display: flex;

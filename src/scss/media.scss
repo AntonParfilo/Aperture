@@ -14,7 +14,6 @@
       }
       .button {
         @include adaptiveValue("margin-right", 80, 56, 768, 320);
-        // margin-right: 80px;
       }
       .header__burger {
         display: block;
@@ -33,6 +32,8 @@
   }
   .what {
     .what__content {
+      width: 100vw;
+      transform: translate(-20px, 0);
       flex-direction: column;
       .what__lc,
       .what__rc {
@@ -133,8 +134,16 @@
 }
 
 @media (max-width: 550px) {
+  .opacity{
+    h2{
+      width: 100% !important;
+    }
+  }
   .footer {
     .footer__content {
+      .animation_wrapper_footer{
+        width: 90%;
+      }
       a {
         width: 90% !important;
         box-sizing: border-box;

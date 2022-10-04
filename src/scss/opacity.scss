@@ -11,11 +11,15 @@
         align-items: flex-end;
         @extend %title_h2;
         h2{
+            width: 500px;
+            text-align: left;
             text-transform: uppercase;
             transform: translate(200%, 0);
+            @include adaptiveValue("font-size", 40, 24, 450, 320);
         }
         p{
             width: 500px !important;
+            text-align: left !important;
             transform: translate(200%, 0);
         }
         @extend %info_block;

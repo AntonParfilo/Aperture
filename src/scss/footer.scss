@@ -9,6 +9,26 @@ footer {
     align-items: center;
     @extend %title_h2;
     @extend %button;
+    .footer__title, .footer__subtitle, .footer__button{
+      transform: translate(0, 200%);
+    }
+    .footer__leftText1, .footer__leftText2{
+      transform: translate(-200%, 0);
+    }
+    .footer__leftText2{
+      font-size: 14px;
+    }
+    .footer__subtitle, .footer__button{
+      animation-delay: .5s;
+    }
+    .animation_wrapper_footer{
+      overflow: hidden;
+      width: 140px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     a {
       text-decoration: none;
       margin: 40px 0;
@@ -77,8 +97,14 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        .animation_wrapper_input{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
         .input_wrapper {
-          width: 460px;
+          transform: translate(-200%, 0);
+          width: 90%;
           height: 75px;
           background-color: #f9fafb;
           border-radius: 12px;
