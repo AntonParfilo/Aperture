@@ -10,6 +10,7 @@ footer {
     @extend %title_h2;
     @extend %button;
     .footer__title, .footer__subtitle, .footer__button{
+      text-align: center;
       transform: translate(0, 200%);
     }
     .footer__leftText1, .footer__leftText2{

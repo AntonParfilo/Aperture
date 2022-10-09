@@ -112,7 +112,7 @@
 }
 
 .aperture {
-  background: url("../img/Aperture_bg.jpg") no-repeat bottom center;
+  background: url("/src/img/Aperture_bg.jpg") no-repeat bottom center;
   background-size: cover;
   height: 100vh;
 }
@@ -179,6 +179,7 @@
 }
 .what .what__wrapper #what_title {
   transform: translate(0, 200%);
+  text-align: center;
 }
 .what .what__wrapper #what_subtitle {
   transform: translate(0, 200%);
@@ -201,7 +202,7 @@
   padding: 20px;
   width: 100%;
   height: 560px;
-  background: url("../img/what1.jpg") no-repeat center center;
+  background: url("/src/img/what1.jpg") no-repeat center center;
   background-size: 100% auto;
 }
 .what .what__wrapper .what__content .what__lc .what__product p {
@@ -218,7 +219,7 @@
   padding: 20px;
   width: 100%;
   height: 560px;
-  background: url("../img/what3.jpg") no-repeat center center;
+  background: url("/src/img/what3.jpg") no-repeat center center;
   background-size: 100% auto;
 }
 .what .what__wrapper .what__content .what__lc .what__drone p {
@@ -240,7 +241,7 @@
   padding: 20px;
   width: 100%;
   height: 560px;
-  background: url("../img/what2.jpg") no-repeat center center;
+  background: url("/src/img/what2.jpg") no-repeat center center;
   background-size: 100% auto;
 }
 .what .what__wrapper .what__content .what__rc .what__arc p {
@@ -256,7 +257,7 @@
   padding: 20px;
   width: 100%;
   height: 560px;
-  background: url("../img/what4.jpg") no-repeat center center;
+  background: url("/src/img/what4.jpg") no-repeat center center;
   background-size: 100% auto;
 }
 .what .what__wrapper .what__content .what__rc .what__wildlife p {
@@ -356,6 +357,7 @@
   align-items: center;
 }
 .tools .tools__lc .tools__title {
+  text-align: center;
   transform: translate(-200%, 0);
 }
 .tools .tools__lc .tools__subtitle {
@@ -386,14 +388,14 @@
   box-sizing: border-box;
   width: 50%;
   height: 100%;
-  background: url("../img/tools_bg.jpg") no-repeat center center;
+  background: url("/src/img/tools_bg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .monstera {
   width: 100%;
   height: 100vh;
-  background: url("../img/monstera_bg.jpg") no-repeat center center;
+  background: url("/src/img/monstera_bg.jpg") no-repeat center center;
   background-size: cover;
 }
 .monstera .monstera_wrapper {
@@ -438,6 +440,7 @@
   align-items: center;
 }
 .clients .clients__content .clients__title {
+  text-align: center;
   transform: translate(0, 200%);
 }
 .clients .clients__content .clients__subtitle {
@@ -478,6 +481,7 @@ footer .footer__content {
   align-items: center;
 }
 footer .footer__content .footer__title, footer .footer__content .footer__subtitle, footer .footer__content .footer__button {
+  text-align: center;
   transform: translate(0, 200%);
 }
 footer .footer__content .footer__leftText1, footer .footer__content .footer__leftText2 {
@@ -702,6 +706,9 @@ footer .footer__content .footer__block3 .footer__social a svg {
   }
   .what .what__content .what__rc .what__wildlife {
     background-size: cover !important;
+  }
+  .opacity .opacity__wrapper .animation_wrapper {
+    width: 100%;
   }
   .opacity .opacity__wrapper h2 {
     width: 100%;
@@ -1003,7 +1010,7 @@ body {
   left: -10%;
   width: 120vw;
   height: 110vh;
-  background: url("../img/fixed_bg.jpg") no-repeat center center;
+  background: url("/src/img/fixed_bg.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
@@ -1013,7 +1020,7 @@ body {
   left: -10%;
   width: 120vw;
   height: 110vh;
-  background: url("../img/fixed_bg2.jpg") no-repeat center center;
+  background: url("/src/img/fixed_bg2.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
@@ -1044,7 +1051,6 @@ body {
 .what .what__wrapper h2, .opacity .opacity__wrapper h2, .tools .tools__lc h2, .monstera .monstera_wrapper h2, .clients .clients__content h2, footer .footer__content h2 {
   font-size: 40px;
   margin: 0;
-  text-align: center;
 }
 .what .what__wrapper p, .opacity .opacity__wrapper p, .tools .tools__lc p, .monstera .monstera_wrapper p, .clients .clients__content p, footer .footer__content p {
   width: 100%;
