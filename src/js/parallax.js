@@ -36,9 +36,6 @@ class MousePRLX {
 			const paralaxMouse = document.querySelectorAll('[data-prlx-mouse]');
 			if (paralaxMouse.length) {
 				this.paralaxMouseInit(paralaxMouse);
-				this.setLogging(`Проснулся, слежу за объектами: (${paralaxMouse.length})`);
-			} else {
-				this.setLogging('Нет ни одного объекта. Сплю...zzZZZzZZz...');
 			}
 		}
 	}
@@ -97,10 +94,6 @@ class MousePRLX {
 				});
 			}
 		});
-	}
-	// Логгинг в консоль
-	setLogging(message) {
-		this.config.logging ? FLS(`[PRLX Mouse]: ${message}`) : null;
 	}
 }
 // Запускаем и добавляем в объект модулей
